@@ -19,7 +19,7 @@ public class OriginalMovementScript : MonoBehaviour
     void Update()
     {
         float horizValue = Input.GetAxis("Horizontal");
-        rb2.velocity = new Vector2(horizValue * 2, rb2.velocity.y);
+        rb2.velocity = new Vector2(horizValue * 5, rb2.velocity.y);
 
         if (horizValue > 0)
         {
