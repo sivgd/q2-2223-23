@@ -4,6 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
+  m_Scenes: []
+=======
   m_Scenes:
   - enabled: 1
     path: Assets/Marcus/GameOver.unity
@@ -14,4 +17,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Will/Main Level.unity
     guid: d5779cb8009ca094bb688deb50f28b1f
+>>>>>>> 86d17cde01614858cc1b928a2acf4f71c50b17bf
   m_configObjects: {}
