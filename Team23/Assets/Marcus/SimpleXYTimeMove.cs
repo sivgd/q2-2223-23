@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SimpleXYTimeMove : MonoBehaviour
 {
-    
+    public float scaler;
 
     // Start is called before the first frame update
     void Start()
