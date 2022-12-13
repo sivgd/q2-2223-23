@@ -12,7 +12,7 @@ public class SceneChange : MonoBehaviour
         if (collision.tag == "Player")
         {
             Debug.Log("Switch scene");
-            SceneManager.LoadScene("Main Level");
+            SceneManager.LoadScene("GameOver");
         }
 
         if (collision.tag == "PlayerMainMenu")
