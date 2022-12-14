@@ -6,7 +6,8 @@ public class PlayerStats : MonoBehaviour
 
     
 {
-    public int lives;
+    public int balloons;
+    public int maxBalloons;
 
     // Start is called before the first frame update
     void Start()
@@ -14,9 +15,8 @@ public class PlayerStats : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+  public void CollectedBalloon()
     {
-        
+        balloons = balloons + 1;
     }
 }

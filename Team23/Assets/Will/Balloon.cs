@@ -5,15 +5,29 @@ using UnityEngine;
 public class Balloon : MonoBehaviour
 
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    public GameObject player;
+    public GameObject balloon;
+    public bool touchedBalloon = false;
+    //OnTriggerEnter(Collider Col)
+    //{
+        //if (col.collider.name == "Frogella")
+        //{
+            //touchedBalloon == true;
+        //}
+    //}
 
-    }
-
-    // Update is called once per frame
     void Update()
+
+
+
     {
-    
+        if (touchedBalloon == true)
+        {
+            Debug.Log("Collected!");
+            player.GetComponent<PlayerStats>().CollectedBalloon();
+            touchedBalloon = false;
+        }
+
     }
+
 }

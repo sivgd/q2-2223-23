@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class OriginalMovementScript : MonoBehaviour
 {
+    public GameObject player;
     bool grounded = false;
     Rigidbody2D rb2;
     SpriteRenderer sr;
     public float scaler;
-    public int lives;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,7 @@ public class OriginalMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lives <= 0)
+        if (player.GetComponent<PlayerStats>().balloons <= 0)
         {
             float horizValue = Input.GetAxis("Horizontal");
             rb2.velocity = new Vector2(horizValue * 5, rb2.velocity.y);
@@ -40,7 +40,7 @@ public class OriginalMovementScript : MonoBehaviour
                 rb2.velocity = new Vector2(rb2.velocity.x, 8);
             }
         }
-        else if (lives > 0)
+        else if (player.GetComponent<PlayerStats>().balloons >= 0)
         {
         float inX = Time.deltaTime * scaler * Input.GetAxis("Horizontal");
         float inY = Time.deltaTime * scaler * Input.GetAxis("Vertical");
