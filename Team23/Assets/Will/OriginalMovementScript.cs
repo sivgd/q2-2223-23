@@ -47,10 +47,10 @@ public class OriginalMovementScript : MonoBehaviour
         {
 
             float inX = Time.deltaTime * scaler * Input.GetAxis("Horizontal");
-        float inY = Time.deltaTime * scaler * Input.GetAxis("Vertical");
-        rb2.gravityScale = 0;
-        transform.position += new Vector3(inX, inY, 0);
-        Debug.Log(inX + ", " + inY);
+            float inY = Time.deltaTime * scaler * Input.GetAxis("Vertical");
+            transform.position += new Vector3(inX, inY, 0);
+            Debug.Log(inX + ", " + inY);
+            rb2.gravityScale = 0;
         }
        
     }
