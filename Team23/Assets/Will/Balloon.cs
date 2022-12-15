@@ -8,23 +8,25 @@ public class Balloon : MonoBehaviour
     public GameObject player;
     public GameObject balloon;
     public bool touchedBalloon = false;
-    //OnTriggerEnter(Collider Col)
-    //{
-        //if (col.collider.name == "Frogella")
-        //{
-            //touchedBalloon == true;
-        //}
-    //}
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            Debug.Log("Collected");
+            touchedBalloon = true;
+        }
+    }
     void Update()
 
+ 
 
-
-    {
+        {
         if (touchedBalloon == true)
         {
             Debug.Log("Collected!");
             player.GetComponent<PlayerStats>().CollectedBalloon();
+            Destroy(balloon);
             touchedBalloon = false;
         }
 

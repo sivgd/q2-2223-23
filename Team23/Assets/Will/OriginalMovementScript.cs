@@ -9,6 +9,7 @@ public class OriginalMovementScript : MonoBehaviour
     Rigidbody2D rb2;
     SpriteRenderer sr;
     public float scaler;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,13 @@ public class OriginalMovementScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+
     {
         if (player.GetComponent<PlayerStats>().balloons <= 0)
         {
             float horizValue = Input.GetAxis("Horizontal");
             rb2.velocity = new Vector2(horizValue * 5, rb2.velocity.y);
+            rb2.gravityScale = 1;
 
             if (horizValue > 0)
             {
@@ -42,8 +45,10 @@ public class OriginalMovementScript : MonoBehaviour
         }
         else if (player.GetComponent<PlayerStats>().balloons >= 0)
         {
-        float inX = Time.deltaTime * scaler * Input.GetAxis("Horizontal");
+
+            float inX = Time.deltaTime * scaler * Input.GetAxis("Horizontal");
         float inY = Time.deltaTime * scaler * Input.GetAxis("Vertical");
+        rb2.gravityScale = 0;
         transform.position += new Vector3(inX, inY, 0);
         Debug.Log(inX + ", " + inY);
         }
