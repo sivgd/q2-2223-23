@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Will/Main Level.unity
     guid: d5779cb8009ca094bb688deb50f28b1f
+  - enabled: 1
+    path: Assets/Marcus/WinScene.unity
+    guid: d23a23f8e853dd74c9022698652c9cf8
   m_configObjects: {}
