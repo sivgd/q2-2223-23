@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Marcus/WinScene.unity
     guid: d23a23f8e853dd74c9022698652c9cf8
+  - enabled: 1
+    path: Assets/Marcus/Credits.unity
+    guid: 0537b718eb1a22840a5607c56dedd74a
   m_configObjects: {}
