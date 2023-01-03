@@ -17,7 +17,7 @@ public class ToStart : MonoBehaviour
         
     }
 
-    public void LoadScene(string "Main Level")
+    public void LoadScene()
     {
         Debug.Log("StartGame");
         SceneManager.LoadScene("Main Level");
