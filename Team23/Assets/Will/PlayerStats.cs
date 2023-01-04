@@ -19,4 +19,9 @@ public class PlayerStats : MonoBehaviour
     {
         balloons = balloons + 1;
     }
+    public void frogellaHitTaken()
+    {
+        balloons = balloons - 1;
+    }
+
 }
