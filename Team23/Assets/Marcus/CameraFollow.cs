@@ -8,6 +8,12 @@ public class CameraFollow : MonoBehaviour
     //public Transform target;
     public GameObject player;
     private Vector3 offset;
+    public bool border;
+    public float minX;
+    public float maxX;
+
+    public float minY;
+    public float maxY;
     //[Range(0,10)]
     //public float smoothFactor;
 
@@ -23,9 +29,14 @@ public class CameraFollow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
         transform.position = player.transform.position + offset;
+
+        if(border==true)
+        {
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY), transform.position.z);
+        }
 
         //Work in progress camera delay
         //Vector3 targetPosition = target.position + offset;

@@ -2110,6 +2110,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1934460854}
+  border: 0
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!1 &505299828
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,7 +2523,7 @@ Transform:
   m_LocalScale: {x: 0.6303885, y: 0.6303885, z: 0.6303885}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &770895951
 GameObject:
@@ -3670,12 +3675,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882552605}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1.33, z: -3.25}
   m_LocalScale: {x: 1.2440041, y: 1.2440041, z: 1.2440041}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1882552608
 MonoBehaviour:
@@ -4032,6 +4037,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1882552605}
+  border: 1
+  minX: -14
+  maxX: 14
+  minY: -0.3721167
+  maxY: 6.2
 --- !u!1 &2065174086
 GameObject:
   m_ObjectHideFlags: 0
