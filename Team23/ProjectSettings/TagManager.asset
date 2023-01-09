@@ -4,8 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Bug
   - Border
+=======
+  - ShowOnPause
+>>>>>>> 4f47e751e1e80baca1b1eae4a976b6153be907d6
   layers:
   - Default
   - TransparentFX
