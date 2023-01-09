@@ -25,7 +25,7 @@ public class Balloon : MonoBehaviour
         {
         if (touchedBalloon == true)
         {
-            Debug.Log("Collected!");
+            Debug.Log("Collected!!!!");
             player.GetComponent<PlayerStats>().CollectedBalloon();
             Destroy(balloon);
             touchedBalloon = false;

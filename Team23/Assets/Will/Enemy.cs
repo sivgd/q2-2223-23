@@ -16,20 +16,20 @@ public class Enemy : MonoBehaviour
             gotHitByEnemy = true;
         }
     }
-         
-void Start()
+
+    void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-    if (gotHitByEnemy == true)
-    {
-    Debug.Log("Collected!");
-    player.GetComponent<PlayerStats>().frogellaHitTaken();
-    gotHitByEnemy = false;
+        if (gotHitByEnemy == true)
+        {
+            Debug.Log("Collected!");
+            player.GetComponent<PlayerStats>().frogellaHitTaken();
+            gotHitByEnemy = false;
         }
     }
 }
