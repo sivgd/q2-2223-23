@@ -4,37 +4,21 @@ using UnityEngine;
 
 public class SpawinpointMovement : MonoBehaviour
 {
-    float moveSpeed = 1f;
+    public float speed = 0.8f;
+    public float range = 3;
 
-    Rigidbody2D myRigidbody;
+    float startingY;
+    int dir = 1;
 
-    // Start is called before the first frame update
     void Start()
     {
-        myRigidbody = GetComponent<Rigidbody2D>();
+        startingY = transform.position.y;
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (IsFacingRight())
-        {
-            //Move right
-            myRigidbody.velocity = new Vector2(moveSpeed, 0f);
-        }
-        else
-        {
-            //Move left
-            myRigidbody.velocity = new Vector2(-moveSpeed, 0f);
-        }
-    }
-    private bool IsFacingRight()
-    {
-        return transform.localScale.y > Mathf.Epsilon;
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        //Turn
-        transform.localScale = new Vector2(-(Mathf.Sign(myRigidbody.velocity.x)), transform.localScale.y);
+        transform.Translate(Vector2.up * speed * Time.deltaTime * dir);
+        if (transform.position.y < startingY || transform.position.y > startingY + range)
+            dir *= -1;
     }
 }
