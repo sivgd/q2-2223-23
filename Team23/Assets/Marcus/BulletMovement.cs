@@ -18,7 +18,7 @@ public class BulletMovement : MonoBehaviour
         target = GameObject.FindObjectOfType<Frogella>();
         moveDirection = (target.transform.position - transform.position).normalized * movespeed;
         rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
-        Destroy(gameObject, 3f);
+        
     }
 
     // Update is called once per frame
