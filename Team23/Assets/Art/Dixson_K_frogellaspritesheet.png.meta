@@ -1,7 +1,16 @@
 fileFormatVersion: 2
-guid: b3edea4d92f7598459b470b7497c7463
+guid: 75ae6eb2834f4404dae3dbb1e253b9c6
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8876737500713469123
+    second: Dixson_K_frogellaspritesheet_0
+  - first:
+      213: -6327877000615744971
+    second: Dixson_K_frogellaspritesheet_1
+  - first:
+      213: 3444026526536864280
+    second: Dixson_K_frogellaspritesheet_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +50,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,7 +122,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Dixson_K_frogellaspritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3bb599264e7fc480800000000000000
+      internalID: -8876737500713469123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dixson_K_frogellaspritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 31
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a2febf46dde28a0800000000000000
+      internalID: -6327877000615744971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dixson_K_frogellaspritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 15
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812904fe0e3abcf20800000000000000
+      internalID: 3444026526536864280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
