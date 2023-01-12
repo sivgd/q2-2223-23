@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fireRate = 1f;
+        fireRate = 10f;
         nextFire = Time.time;
     }
 
