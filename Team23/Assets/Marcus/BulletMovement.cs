@@ -33,5 +33,9 @@ public class BulletMovement : MonoBehaviour
             Debug.Log("Hit");
             Destroy(gameObject);
         }
+        if (col.gameObject.name.Equals ("Destroyer"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
