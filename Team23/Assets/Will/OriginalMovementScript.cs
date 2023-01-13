@@ -59,6 +59,17 @@ public class OriginalMovementScript : MonoBehaviour
             float inY = Time.deltaTime * scaler * Input.GetAxis("Vertical");
             transform.position += new Vector3(inX, inY, 0);
             rb2.gravityScale = 0;
+
+            float horizValue = Input.GetAxis("Horizontal");
+            rb2.velocity = new Vector2(horizValue * 1, rb2.velocity.y);
+            if (horizValue > 0)
+            {
+                sr.flipX = true;
+            }
+            else
+            {
+                sr.flipX = false;
+            }
         }
        
     }
