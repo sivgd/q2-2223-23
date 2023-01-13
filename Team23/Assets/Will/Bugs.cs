@@ -6,29 +6,30 @@ public class Bugs : MonoBehaviour
 {
     public GameObject bug;
     public GameObject player;
-    public GameObject border;
     public bool bugTouched = false;
     public float scaler;
     // Start is called before the first frame update
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Border")
         {
-            bugTouched = true;
+            Destroy(gameObject);
         }
-        else if (collision.tag == "Border")
+        else if (collision.tag == "Tongue")
         {
-            bugTouched = true;
+            //player.GetComponent<PlayerStats>().CollectedBalloon();
+            Destroy(gameObject);
         }
-        // Update is called once per frame
-        void Update()
+
+    }
+
+    void Update()
         {
-            if (bugTouched == true)
-            {
-                Destroy(bug);
-                bugTouched = false;
-            }
+        if (bugTouched == true)
+        {
+          Destroy(bug);
+          bugTouched = false;
+          }
         }
     }
-}

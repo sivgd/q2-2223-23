@@ -10,9 +10,9 @@ public class Enemy : MonoBehaviour
     public bool gotHitByEnemy = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Enemy")
         {
-            Debug.Log("Collected");
+            Debug.Log("Hit");
             gotHitByEnemy = true;
         }
     }
@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
     {
         if (gotHitByEnemy == true)
         {
-            Debug.Log("Collected!");
+            Debug.Log("Taken Hit");
             player.GetComponent<PlayerStats>().frogellaHitTaken();
             gotHitByEnemy = false;
         }
