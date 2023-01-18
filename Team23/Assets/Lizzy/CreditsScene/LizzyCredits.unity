@@ -207,7 +207,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 706719500}
         m_TargetAssemblyTypeName: ChangeLayer, Assembly-CSharp
-        m_MethodName: Change
+        m_MethodName: ButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -556,6 +556,7 @@ MonoBehaviour:
   marcusPage: {fileID: 1755026277}
   miaPage: {fileID: 2076508294}
   willPage: {fileID: 1883817119}
+  thankYou: {fileID: 1847849796}
 --- !u!4 &706719501
 Transform:
   m_ObjectHideFlags: 0

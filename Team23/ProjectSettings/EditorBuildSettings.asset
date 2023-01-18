@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Marcus/Credits.unity
     guid: 0537b718eb1a22840a5607c56dedd74a
+  - enabled: 1
+    path: Assets/Lizzy/CreditsScene/LizzyCredits.unity
+    guid: c598664482f49b54082e2f4256fd5eea
   m_configObjects: {}
