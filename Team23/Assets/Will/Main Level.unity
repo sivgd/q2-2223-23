@@ -11806,7 +11806,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 987594269}
-  - {fileID: 2142043345}
   spawnPoint:
   - {fileID: 1560327075}
   - {fileID: 445184576}
