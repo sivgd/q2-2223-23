@@ -7,6 +7,8 @@ public class YetAnotherPause : MonoBehaviour
 {
     public static bool isGamePaused = false;
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject controlsScreen;
+    [SerializeField] GameObject lilyPad;
 
     // Update is called once per frame
     void Update()
@@ -47,5 +49,11 @@ public class YetAnotherPause : MonoBehaviour
     public void MenuGame()
     {
         SceneManager.LoadScene("TitleScreenScene");
+    }
+
+    public void Control()
+    {
+        lilyPad.SetActive(false);
+        controlsScreen.SetActive(true);
     }
 }

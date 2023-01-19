@@ -327,7 +327,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0:00
+  m_text: 00:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -516,7 +516,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2033961006}
   - component: {fileID: 2033961005}
-  - component: {fileID: 2033961004}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -524,21 +523,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2033961004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033961003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 457f72ad0f9b85246927f53e9446a4ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TimeLeft: 5
-  TimerOn: 0
-  TimerTxt: {fileID: 1101819638}
 --- !u!212 &2033961005
 SpriteRenderer:
   m_ObjectHideFlags: 0
