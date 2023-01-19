@@ -36,7 +36,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: Polution Level
+    m_ConditionEvent: Clean Level
     m_EventTreshold: 50
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8860446973184710655}
@@ -89,7 +89,7 @@ AnimatorController:
   m_Name: pollution_bar2_75
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Polution Level
+  - m_Name: Clean Level
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -117,7 +117,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: Polution Level
+    m_ConditionEvent: Clean Level
     m_EventTreshold: 20
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -240987225580691714}
@@ -142,7 +142,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: Polution Level
+    m_ConditionEvent: Clean Level
     m_EventTreshold: 50
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -240987225580691714}
@@ -194,7 +194,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: Polution Level
+    m_ConditionEvent: Clean Level
     m_EventTreshold: 80
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3082139986635096251}
@@ -219,7 +219,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: Polution Level
+    m_ConditionEvent: Clean Level
     m_EventTreshold: 20
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8677036412256393391}
@@ -244,7 +244,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: Polution Level
+    m_ConditionEvent: Clean Level
     m_EventTreshold: 80
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8860446973184710655}
@@ -277,7 +277,7 @@ AnimatorStateMachine:
     m_Position: {x: 310, y: -30, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3082139986635096251}
-    m_Position: {x: 520, y: 210, z: 0}
+    m_Position: {x: 590, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8677036412256393391}
     m_Position: {x: 620, y: -30, z: 0}

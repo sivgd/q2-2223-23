@@ -15,8 +15,11 @@ public class Balloon : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("Collected");
-            touchedBalloon = true;
+            if (player.GetComponent<PlayerStats>().balloons < 3)
+            {
+                Debug.Log("Collected");
+                touchedBalloon = true;
+            }
         }
         else if (collision.tag == "Border")
         {
