@@ -14,12 +14,15 @@ public class Bugs : MonoBehaviour
     {
         if (collision.tag == "Border")
         {
-            Destroy(gameObject);
+                Destroy(gameObject);
         }
-        else if (collision.tag == "Tongue")
+        if (collision.tag == "Player")
         {
-            //player.GetComponent<PlayerStats>().CollectedBalloon();
-            Destroy(gameObject);
+            if (player.GetComponent<PlayerStats>().bugsCollected == false)
+            {
+                Debug.Log("Collected");
+                bugTouched = true;
+            }
         }
 
     }
@@ -28,8 +31,18 @@ public class Bugs : MonoBehaviour
         {
         if (bugTouched == true)
         {
-          Destroy(bug);
-          bugTouched = false;
-          }
+            if (player.GetComponent<PlayerStats>().bugsCollected == false)
+            {
+                Debug.Log("Collected and destroyed");
+                Destroy(bug);
+                player.GetComponent<PlayerStats>().CollectedBug();
+                bugTouched = false;
+            }
+            else if (player.GetComponent<PlayerStats>().bugsCollected == true)
+            {
+                bugTouched = false;
+            }
+
+            }
         }
     }

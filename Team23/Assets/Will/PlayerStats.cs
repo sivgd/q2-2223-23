@@ -8,6 +8,8 @@ public class PlayerStats : MonoBehaviour
 {
     public int balloons;
     public int maxBalloons;
+    public bool bugsCollected;
+    public bool shotBug;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,14 @@ public class PlayerStats : MonoBehaviour
     public void frogellaHitTaken()
     {
         balloons = balloons - 1;
+    }
+    public void CollectedBug()
+    {
+        bugsCollected = true;
+    }
+    public void ShotBug()
+    {
+        bugsCollected = false;
     }
 
 }
