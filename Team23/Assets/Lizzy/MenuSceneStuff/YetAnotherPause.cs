@@ -56,4 +56,11 @@ public class YetAnotherPause : MonoBehaviour
         lilyPad.SetActive(false);
         controlsScreen.SetActive(true);
     }
+
+    public void Back()
+    {
+        lilyPad.SetActive(true);
+        controlsScreen.SetActive(false);
+
+    }
 }
