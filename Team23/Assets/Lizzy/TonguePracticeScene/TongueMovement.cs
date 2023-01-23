@@ -22,6 +22,6 @@ public class TongueMovement : MonoBehaviour
             target.z = transform.position.z;
         }
 
-       //ransform.position = Vector3.MoveToward(transform.position, target, speed * Time.deltaTime);
+       transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
     }
 }
