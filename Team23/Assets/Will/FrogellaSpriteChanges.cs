@@ -4,31 +4,23 @@ using UnityEngine;
 
 public class FrogellaSpriteChanges : MonoBehaviour
 {
-    public GameObject player;
-    public Sprite FrogellaNoBalloons;
-    public Sprite FrogellaOneBalloon;
-    public Sprite FrogellaTwoBalloons;
-    public Sprite FrogellaThreeBalloons;
+    Animator anim;
     // Update is called once per frame
+    void Start()
+    {
+        anim = gameObject.GetComponent<Animator>();
+    }
+
     void Update()
     {
-        if (player.GetComponent<PlayerStats>().balloons == 0)
+        if (GetComponent<PlayerStats>().bugsCollected == true)
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = FrogellaNoBalloons;
+            anim.SetBool("BugCollected", true);
         }
-        if (player.GetComponent<PlayerStats>().balloons == 1)
+        if (GetComponent<PlayerStats>().shotBug == true)
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = FrogellaOneBalloon;
+            anim.SetBool("ShotBug", true);
+            anim.SetBool("BugCollected", false);
         }
-         if (player.GetComponent<PlayerStats>().balloons == 2)
-        {
-
-        }
-         if (player.GetComponent<PlayerStats>().balloons == 3)
-        {
-
-        }
-
-
     }
 }
