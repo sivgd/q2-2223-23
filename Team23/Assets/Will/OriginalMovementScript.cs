@@ -10,6 +10,7 @@ public class OriginalMovementScript : MonoBehaviour
     SpriteRenderer sr;
     public float scaler;
     public bool velocityZeroed;
+    public float horizValue;
 
     // Start is called before the first frame update
     void Start()
@@ -24,10 +25,12 @@ public class OriginalMovementScript : MonoBehaviour
     void Update()
 
     {
+
         if (player.GetComponent<PlayerStats>().balloons <= 0)
         {
             velocityZeroed = false;
             float horizValue = Input.GetAxis("Horizontal");
+            float vertValue = Input.GetAxis("Vertical");
             rb2.velocity = new Vector2(horizValue * 5, rb2.velocity.y);
             rb2.gravityScale = 1;
 
@@ -44,10 +47,36 @@ public class OriginalMovementScript : MonoBehaviour
             if (grounded && Input.GetKeyDown(KeyCode.Space))
             {
                 rb2.velocity = new Vector2(rb2.velocity.x, 8);
+
             }
+
+            if (horizValue == 0)
+            {
+                GetComponent<FrogellaSpriteChanges>().moving = false;
+            }
+            if (horizValue > 0)
+            {
+                GetComponent<FrogellaSpriteChanges>().moving = true;
+            }
+            if (horizValue < 0)
+            {
+                GetComponent<FrogellaSpriteChanges>().moving = true;
+            }
+            if (vertValue == -0.69f)
+                {
+                GetComponent<FrogellaSpriteChanges>().grounded = true;
+            }
+            if (vertValue > -0.69f)
+            {
+            GetComponent<FrogellaSpriteChanges>().grounded = false; 
+            }
+
+
         }
+
         else if (player.GetComponent<PlayerStats>().balloons > 0)
         {
+
             if (velocityZeroed == false)
             {
                 rb2.velocity = Vector2.zero;
@@ -69,6 +98,14 @@ public class OriginalMovementScript : MonoBehaviour
             else
             {
                 sr.flipX = false;
+            }
+            if (horizValue > 0)
+            {
+                GetComponent<FrogellaSpriteChanges>().moving = true;
+            }
+            if (horizValue < 0)
+            {
+                GetComponent<FrogellaSpriteChanges>().moving = true;
             }
         }
        

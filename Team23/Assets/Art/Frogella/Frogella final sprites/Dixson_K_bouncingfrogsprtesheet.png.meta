@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: cab17d1e07760f149b1af43af6e5e136
+guid: 6c7ce0b96a803f44bab89d32ece15be4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7717204189048072729
-    second: Dixson_K_Frogellaidle_0
+      213: 6041332784813294396
+    second: Dixson_K_bouncingfrogsprtesheet_0
+  - first:
+      213: 9021067105821346719
+    second: Dixson_K_bouncingfrogsprtesheet_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,11 +121,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dixson_K_Frogellaidle_0
+      name: Dixson_K_bouncingfrogsprtesheet_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 32
+        x: 17
+        y: 40
         width: 32
         height: 29
       alignment: 0
@@ -132,8 +135,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e512a47dabf6e490800000000000000
-      internalID: -7717204189048072729
+      spriteID: c33c7b0d82027d350800000000000000
+      internalID: 6041332784813294396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dixson_K_bouncingfrogsprtesheet_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 9
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b4171bcb4413d70800000000000000
+      internalID: 9021067105821346719
       vertices: []
       indices: 
       edges: []

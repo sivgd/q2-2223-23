@@ -29,7 +29,7 @@ public class BalloonAttach : MonoBehaviour
         if (player.GetComponent<PlayerStats>().balloons == 1)
         {
             balloon1.transform.parent = player.transform;
-            balloon1.transform.localPosition = new Vector3(0, .13f, 0.01f);
+            balloon1.transform.localPosition = new Vector3(0, .18f, 0.01f);
             balloon2.transform.localPosition = new Vector3(0, 999, 0);
             balloon3.transform.localPosition = new Vector3(0, 999, 0);
         }
@@ -38,7 +38,7 @@ public class BalloonAttach : MonoBehaviour
         {
             balloon2.transform.parent = player.transform;
             balloon1.transform.localPosition = new Vector3(0, 999, 0);
-            balloon2.transform.localPosition = new Vector3(0, .13f, 0.01f);
+            balloon2.transform.localPosition = new Vector3(0, .18f, 0.01f);
             balloon3.transform.localPosition = new Vector3(0, 999, 0);
         }
 
@@ -47,7 +47,7 @@ public class BalloonAttach : MonoBehaviour
             balloon3.transform.parent = player.transform;
             balloon1.transform.localPosition = new Vector3(0, 999, 0);
             balloon2.transform.localPosition = new Vector3(0, 999, 0);
-            balloon3.transform.localPosition = new Vector3(0, .13f, 0.01f);
+            balloon3.transform.localPosition = new Vector3(0, .18f, 0.01f);
         }
     }
 }

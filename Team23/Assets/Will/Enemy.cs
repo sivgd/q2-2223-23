@@ -8,10 +8,12 @@ public class Enemy : MonoBehaviour
     public GameObject player;
     public GameObject enemy;
     public bool gotHitByEnemy = false;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
+        if (collision.tag == "Player")
         {
+            
             Debug.Log("Hit");
             gotHitByEnemy = true;
         }
