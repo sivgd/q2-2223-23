@@ -30,7 +30,7 @@ public class Slimehit : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             DestroyProjectile();
-            Instantiate(screenSplat, transform.position, Quaternion.identity);
+           
         }
         if (other.gameObject.name.Equals("Destroyer"))
         {

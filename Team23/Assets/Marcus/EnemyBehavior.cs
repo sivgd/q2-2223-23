@@ -7,6 +7,7 @@ public class EnemyBehavior : MonoBehaviour
     float moveSpeed = 1f;
 
     Rigidbody2D myRigidbody;
+    public GameObject trap;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,8 @@ public class EnemyBehavior : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         //Turn
+        
         transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        
     }
 }
