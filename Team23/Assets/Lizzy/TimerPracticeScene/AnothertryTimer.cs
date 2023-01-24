@@ -6,9 +6,9 @@ using TMPro;
 
 public class AnothertryTimer : MonoBehaviour
 {
-    public float timeValue = 300;
+    public float timeValue = 5;
 
-    public TMP_Text timeText;
+    public Text timeText;
 
     // Update is called once per frame
     void Update()

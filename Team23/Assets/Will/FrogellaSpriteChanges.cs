@@ -5,6 +5,8 @@ using UnityEngine;
 public class FrogellaSpriteChanges : MonoBehaviour
 {
     Animator anim;
+    public bool moving;
+    public bool grounded;
     // Update is called once per frame
     void Start()
     {
@@ -21,6 +23,14 @@ public class FrogellaSpriteChanges : MonoBehaviour
         {
             anim.SetBool("ShotBug", true);
             anim.SetBool("BugCollected", false);
+        }
+        if (moving == false)
+        {
+            anim.SetBool("Moving", false);
+        }
+        if (moving == true)
+        {
+            anim.SetBool("Moving", true);
         }
     }
 }
