@@ -6824,7 +6824,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8ba188fff5471dd41afbdfbf34a13c1c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: faf77e030f432ea4280ff9121ad4a47e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8867,6 +8867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f138e19dfda5ec479154dfa77f878ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trap: {fileID: 0}
 --- !u!61 &1376385204
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9468,6 +9469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f138e19dfda5ec479154dfa77f878ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trap: {fileID: 0}
 --- !u!50 &1456854140
 Rigidbody2D:
   serializedVersion: 4
@@ -10041,6 +10043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f138e19dfda5ec479154dfa77f878ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trap: {fileID: 0}
 --- !u!114 &1713012970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11408,6 +11411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f138e19dfda5ec479154dfa77f878ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trap: {fileID: 0}
 --- !u!114 &1993433545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11997,6 +12001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f138e19dfda5ec479154dfa77f878ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trap: {fileID: 0}
 --- !u!114 &2138882863
 MonoBehaviour:
   m_ObjectHideFlags: 0

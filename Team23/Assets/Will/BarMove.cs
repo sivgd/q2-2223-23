@@ -18,11 +18,11 @@ public class BarMove : MonoBehaviour
     // Update is called once per frame
     public void barmoveenemyspawn()
     {
-        bar.transform.position -= new Vector3(0.437f, 0, 0);
+        bar.transform.position += new Vector3(0.437f, 0, 0);
     }
     public void barmovedestroy()
     {
-        bar.transform.position += new Vector3(0.437f, 0, 0);
+        bar.transform.position -= new Vector3(0.437f, 0, 0);
     }
 
 }
