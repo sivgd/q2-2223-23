@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Border
   - Ground
+  - LizzyEnemy
   layers:
   - Default
   - TransparentFX
