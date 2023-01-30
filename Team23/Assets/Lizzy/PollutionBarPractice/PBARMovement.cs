@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PBARMovement : MonoBehaviour
 {
     public int enemies1;
+    public int enemies2;
     Animator anim;
     public int cleanLevel;
+    public int cleanLevel1 = 50;
     public GameObject bar;
 
     // Start is called before the first frame update
@@ -22,7 +25,8 @@ public class PBARMovement : MonoBehaviour
         
         enemies1 = enemies.Length;
 
-        //cleanLevel = enemies1 * 10;
+        enemies2 = enemies1 * 4;
+        cleanLevel = cleanLevel1 - enemies2;
 
         if (cleanLevel > 80)
         {
@@ -35,10 +39,28 @@ public class PBARMovement : MonoBehaviour
         else if (cleanLevel > 20)
         {
             anim.SetInteger("Clean Level", 21);
+            transform.position += new Vector3(0.437f, 0, 0);
         }
         else if (cleanLevel > 0)
         {
             anim.SetInteger("Clean Level", 19);
         }
+        else if (cleanLevel == 0)
+        {
+            SceneManager.LoadScene("TitleScreenScene");
+        }
+
+        
     }
+
+    
+
+    //public void barmoveenemyspawn()
+    //{
+        //bar.transform.position += new Vector3(0.437f, 0, 0);
+    //}
+    //public void barmovedestroy()
+    //{
+        //bar.transform.position -= new Vector3(0.437f, 0, 0);
+    //}
 }
