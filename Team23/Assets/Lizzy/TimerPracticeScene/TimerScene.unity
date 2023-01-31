@@ -422,8 +422,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 487b4214d048562499f2ab6dedee7f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeValue: 4
+  timeValue: 5
   timeText: {fileID: 1713287509}
+  timerIsRunning: 0
 --- !u!114 &1713287509
 MonoBehaviour:
   m_ObjectHideFlags: 0

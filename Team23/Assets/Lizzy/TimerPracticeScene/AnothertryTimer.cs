@@ -11,21 +11,33 @@ public class AnothertryTimer : MonoBehaviour
 
     public Text timeText;
 
+    public bool timerIsRunning = false;
 
+    private void Start()
+    {
+        timerIsRunning = true;
+    }
     // Update is called once per frame
     void Update()
     {
-
-        if (timeValue > 0)
+        if (timerIsRunning)
         {
-            timeValue -= Time.deltaTime;
 
-        } else
-        {
-            timeValue = 0;
+
+            if (timeValue > 0)
+            {
+                timeValue -= Time.deltaTime;
+
+            } else
+            {
+                Debug.Log("Time has run out!");
+                timeValue = 0;
+                timerIsRunning = false;
+                Application.LoadLevel("GameOver");
+            }
+
+            DisplayTime(timeValue);
         }
-
-
     }
 
     void DisplayTime(float timeToDisplay)

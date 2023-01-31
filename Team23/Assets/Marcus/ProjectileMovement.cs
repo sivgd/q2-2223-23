@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProjectileMovement : MonoBehaviour
 {
     public float speed;
-
+    public AudioSource audioPlayer;
     private Transform player;
     private Vector2 target;
     
@@ -30,6 +30,7 @@ public class ProjectileMovement : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             DestroyProjectile();
+
         }
         if (other.gameObject.name.Equals("Destroyer"))
         {
@@ -41,5 +42,7 @@ public class ProjectileMovement : MonoBehaviour
         Destroy(gameObject);
 
     }
+
+
 
 }
