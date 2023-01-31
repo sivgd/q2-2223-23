@@ -19,9 +19,8 @@ public class FrogellaSpriteChanges : MonoBehaviour
         {
             anim.SetBool("BugCollected", true);
         }
-        if (GetComponent<PlayerStats>().shotBug == true)
+        if (GetComponent<PlayerStats>().bugsCollected == false)
         {
-            anim.SetBool("ShotBug", true);
             anim.SetBool("BugCollected", false);
         }
         if (moving == false)

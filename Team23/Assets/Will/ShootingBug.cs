@@ -9,6 +9,7 @@ public class ShootingBug : MonoBehaviour
     public GameObject bullet;
     public float fireSpeed = 1000;
     public GameObject FireFrom;
+    public GameObject player;
     private Rigidbody2D rb2;
     // Start is called before the first frame update
     void Start()
@@ -27,15 +28,16 @@ public class ShootingBug : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
-        //if (GetComponent<PlayerStats>().bugsCollected == true)
-        //{
+        if (player.GetComponent<PlayerStats>().bugsCollected == true)
+        {
             if (Input.GetButtonDown("Fire1"))
             {
                 GameObject b = Instantiate(bullet, FireFrom.transform.position, Quaternion.identity);
                 Rigidbody2D rb2b = b.GetComponent<Rigidbody2D>();
-                rb2b.AddForce(fireSpeed * transform.up);
+                rb2b.AddForce(fireSpeed * transform.right);
+                player.GetComponent<PlayerStats>().bugsCollected = false;
                 Destroy(b , 2.0f);
             }
-        //}
+        }
     }
 }
