@@ -17,11 +17,11 @@ public class PlayerStats : MonoBehaviour
         
     }
 
-  public void CollectedBalloon()
+    public void CollectedBalloon()
     {
         balloons = balloons + 1;
     }
-    public void frogellaHitTaken()
+    public void FrogellaHitTaken()
     {
         balloons = balloons - 1;
     }

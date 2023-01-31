@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
         if (gotHitByEnemy == true)
         {
             Debug.Log("Taken Hit");
-            player.GetComponent<PlayerStats>().frogellaHitTaken();
+            player.GetComponent<PlayerStats>().FrogellaHitTaken();
             gotHitByEnemy = false;
         }
     }

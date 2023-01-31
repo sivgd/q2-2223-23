@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Border
   - Ground
+  - LizzyEnemy
+  - spit
   layers:
   - Default
   - TransparentFX
