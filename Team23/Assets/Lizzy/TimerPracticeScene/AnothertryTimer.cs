@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class AnothertryTimer : MonoBehaviour
 {
@@ -10,19 +11,20 @@ public class AnothertryTimer : MonoBehaviour
 
     public Text timeText;
 
+
     // Update is called once per frame
     void Update()
     {
+
         if (timeValue > 0)
         {
             timeValue -= Time.deltaTime;
 
-        }else
+        } else
         {
             timeValue = 0;
         }
 
-        DisplayTime(timeValue);
 
     }
 
@@ -38,4 +40,5 @@ public class AnothertryTimer : MonoBehaviour
 
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
 }
