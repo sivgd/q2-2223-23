@@ -7,12 +7,13 @@ public class ShootingBug : MonoBehaviour
     private Camera mainCam;
     private Vector3 mousePos;
     public GameObject bullet;
-    public Transform bulletTransform;
-    public bool canFire;
-    public bool bugsCollected;
+    public float fireSpeed = 1000;
+    public GameObject FireFrom;
+    private Rigidbody2D rb2;
     // Start is called before the first frame update
     void Start()
     {
+        rb2 = GetComponent<Rigidbody2D>();
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
     // Update is called once per frame
@@ -26,12 +27,15 @@ public class ShootingBug : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
-        if (bugsCollected == true)
-        {
-            if (Input.GetMouseButton(0))
+        //if (GetComponent<PlayerStats>().bugsCollected == true)
+        //{
+            if (Input.GetButtonDown("Fire1"))
             {
-                //instantiate(bullet, bulletTransform.position, Quaternion.identity);
+                GameObject b = Instantiate(bullet, FireFrom.transform.position, Quaternion.identity);
+                Rigidbody2D rb2b = b.GetComponent<Rigidbody2D>();
+                rb2b.AddForce(fireSpeed * transform.up);
+                Destroy(b , 2.0f);
             }
-        }
+        //}
     }
 }
