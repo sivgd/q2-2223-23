@@ -25,10 +25,7 @@ public class AnothertryTimer : MonoBehaviour
             timeValue = 0;
         }
 
-        {
-            timeValue -= 0
-            SceneManager.LoadScene(sceneName);
-        }
+
     }
 
     void DisplayTime(float timeToDisplay)
