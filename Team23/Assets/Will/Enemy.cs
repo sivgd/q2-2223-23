@@ -9,13 +9,19 @@ public class Enemy : MonoBehaviour
     public GameObject enemy;
     public bool gotHitByEnemy = false;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             
             Debug.Log("Hit");
             gotHitByEnemy = true;
+            if (gotHitByEnemy == true)
+            {
+                Debug.Log("Taken Hit");
+                player.GetComponent<PlayerStats>().FrogellaHitTaken();
+                gotHitByEnemy = false;
+            }
         }
     }
 
@@ -25,13 +31,8 @@ public class Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (gotHitByEnemy == true)
-        {
-            Debug.Log("Taken Hit");
-            player.GetComponent<PlayerStats>().FrogellaHitTaken();
-            gotHitByEnemy = false;
-        }
+        
     }
 }
