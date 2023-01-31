@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 1485ea0cf35e47640a91cec0adc5c268
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3599211915104215014
+    second: Nguyen_K_Spitballs_0
+  - first:
+      213: 3319618104935572139
+    second: Nguyen_K_Spitballs_1
+  - first:
+      213: -8221955105503384590
+    second: Nguyen_K_Spitballs_2
+  - first:
+      213: -3512749521909935616
+    second: Nguyen_K_Spitballs_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +101,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Nguyen_K_Spitballs_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 4
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a102cd825d70d0ec0800000000000000
+      internalID: -3599211915104215014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nguyen_K_Spitballs_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3
+        width: 9
+        height: 7
+      alignment: 9
+      pivot: {x: 0.56506413, y: 0.533462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2e3ae0417a11e20800000000000000
+      internalID: 3319618104935572139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nguyen_K_Spitballs_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 6
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbe241b46fb5ed80800000000000000
+      internalID: -8221955105503384590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nguyen_K_Spitballs_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 5
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00292a1dbe4304fc0800000000000000
+      internalID: -3512749521909935616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
