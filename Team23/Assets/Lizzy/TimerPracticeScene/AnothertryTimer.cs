@@ -34,7 +34,7 @@ public class AnothertryTimer : MonoBehaviour
             } else
             {
 
-                bar.GetComponent<PBARMovement>(). cleanLevel > 50;
+
                 Debug.Log("Time has run out!");
                 timeValue = 0;
                 timerIsRunning = false;
