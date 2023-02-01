@@ -10,7 +10,7 @@ public class PBARMovement : MonoBehaviour
     Animator anim;
     public int cleanLevel;
     public int cleanLevel1 = 100;
-    public int anything;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +29,7 @@ public class PBARMovement : MonoBehaviour
         cleanLevel = cleanLevel1 - enemies2;
         //Debug.Log(cleanLevel);
 
-        if (cleanLevel > 100)
+        if (cleanLevel > 100) //clean
         {
             SceneManager.LoadScene("TitleScreenScene");
         }
@@ -158,7 +158,7 @@ public class PBARMovement : MonoBehaviour
             //transform.position = new Vector3(0.1f, 3.46f, 8.83f);
             transform.localPosition = new Vector3(0, 4.92f, 8.67f);
         }
-        else if (cleanLevel <= 0)
+        else if (cleanLevel <= 0) //dirty
         {
             SceneManager.LoadScene("TitleScreenScene");
         }
