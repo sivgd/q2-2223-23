@@ -13,9 +13,12 @@ public class AnothertryTimer : MonoBehaviour
 
     public bool timerIsRunning = false;
 
+    public GameObject bar;
+
     private void Start()
     {
         timerIsRunning = true;
+
     }
     // Update is called once per frame
     void Update()
@@ -30,6 +33,8 @@ public class AnothertryTimer : MonoBehaviour
 
             } else
             {
+
+                bar.GetComponent<PBARMovement>(). cleanLevel > 50;
                 Debug.Log("Time has run out!");
                 timeValue = 0;
                 timerIsRunning = false;
