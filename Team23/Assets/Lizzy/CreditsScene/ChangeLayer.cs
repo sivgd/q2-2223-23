@@ -9,6 +9,7 @@ public class ChangeLayer : MonoBehaviour
     public GameObject annikaPage;
     public GameObject kylePage;
     public GameObject kimberlyPage;
+    public GameObject kimPage2;
     public GameObject lizzyPage;
     public GameObject marcusPage;
     public GameObject miaPage;
@@ -46,34 +47,40 @@ public class ChangeLayer : MonoBehaviour
         if (counter == 4)
         {
             kimberlyPage.SetActive(false);
-            lizzyPage.SetActive(true);
+            kimPage2.SetActive(true);
         }
 
         if (counter == 5)
+        {
+            kimPage2.SetActive(false);
+            lizzyPage.SetActive(true);
+        }
+
+        if (counter == 6)
         {
             lizzyPage.SetActive(false);
             marcusPage.SetActive(true);
         }
 
-        if (counter == 6)
+        if (counter == 7)
         {
             marcusPage.SetActive(false);
             miaPage.SetActive(true);
         }
 
-        if (counter == 7)
+        if (counter == 8)
         {
             miaPage.SetActive(false);
             willPage.SetActive(true);
         }
 
-        if (counter == 8)
+        if (counter == 9)
         {
             willPage.SetActive(false);
             thankYou.SetActive(true);
         }
 
-        if (counter == 9)
+        if (counter == 10)
         {
             SceneManager.LoadScene("TitleScreenScene");
         }
