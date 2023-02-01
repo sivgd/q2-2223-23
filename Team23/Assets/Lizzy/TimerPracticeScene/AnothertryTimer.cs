@@ -16,11 +16,13 @@ public class AnothertryTimer : MonoBehaviour
     public bool timerIsRunning = false;
 
     public GameObject bar;
+    public int cleanLevel;
 
+    public int anything; 
     private void Start()
     {
         timerIsRunning = true;
-        
+      
 
     }
     // Update is called once per frame
@@ -34,9 +36,9 @@ public class AnothertryTimer : MonoBehaviour
             {
                 timeValue -= Time.deltaTime;
 
-            } else
+            }
+            else if (cleanLevel > 50);
             {
-
 
                 Debug.Log("Time has run out!");
                 timeValue = 0;

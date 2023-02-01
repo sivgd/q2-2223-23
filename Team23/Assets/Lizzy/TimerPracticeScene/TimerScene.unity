@@ -1080,10 +1080,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 487b4214d048562499f2ab6dedee7f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeValue: 8
+  script: {fileID: 1784548996}
+  timeValue: 10
   timeText: {fileID: 1713287509}
   timerIsRunning: 0
   bar: {fileID: 0}
+  cleanLevel: 0
+  anything: 0
 --- !u!114 &1713287509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1288,6 +1291,7 @@ MonoBehaviour:
   enemies2: 0
   cleanLevel: 0
   cleanLevel1: 100
+  anything: 0
 --- !u!95 &1784548997
 Animator:
   serializedVersion: 3
