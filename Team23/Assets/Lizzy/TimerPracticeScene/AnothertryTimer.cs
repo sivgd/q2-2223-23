@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class AnothertryTimer : MonoBehaviour
 {
+    public PBARMovement script;
+
     public float timeValue = 5;
 
     public Text timeText;
@@ -18,6 +20,7 @@ public class AnothertryTimer : MonoBehaviour
     private void Start()
     {
         timerIsRunning = true;
+        
 
     }
     // Update is called once per frame
