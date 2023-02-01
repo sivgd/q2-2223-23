@@ -30,7 +30,7 @@ public class ProjectileMovement : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             DestroyProjectile();
-
+            audioPlayer.Play();
         }
         if (other.gameObject.name.Equals("Destroyer"))
         {
