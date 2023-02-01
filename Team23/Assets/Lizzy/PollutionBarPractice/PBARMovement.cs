@@ -158,7 +158,7 @@ public class PBARMovement : MonoBehaviour
             //transform.position = new Vector3(0.1f, 3.46f, 8.83f);
             transform.localPosition = new Vector3(0, 4.92f, 8.67f);
         }
-        else if (cleanLevel <= 0) //clean
+        else if (cleanLevel <= 0) //dirty
         {
             SceneManager.LoadScene("TitleScreenScene");
         }
