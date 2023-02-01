@@ -5,6 +5,7 @@ using UnityEngine;
 public class ArrowSpriteChange : MonoBehaviour
 {
     public SpriteRenderer rend;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -17,9 +18,13 @@ public class ArrowSpriteChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GetComponent<PlayerStats>().bugsCollected == true)
+        if (player.GetComponent<PlayerStats>().bugsCollected == true)
         {
-            rend.enabled = !rend.enabled;
+            rend.enabled = true;
+        }
+        if (player.GetComponent<PlayerStats>().bugsCollected == false)
+        {
+            rend.enabled = false;
         }
 
     }
