@@ -14,6 +14,7 @@ public class ChangeLayer : MonoBehaviour
     public GameObject marcusPage;
     public GameObject miaPage;
     public GameObject willPage;
+    public GameObject timerFont;
     public GameObject thankYou;
     int counter = 0;
 
@@ -77,10 +78,16 @@ public class ChangeLayer : MonoBehaviour
         if (counter == 9)
         {
             willPage.SetActive(false);
-            thankYou.SetActive(true);
+            timerFont.SetActive(true);
         }
 
         if (counter == 10)
+        {
+            timerFont.SetActive(false);
+            thankYou.SetActive(true);
+        }
+
+        if (counter == 11)
         {
             SceneManager.LoadScene("TitleScreenScene");
         }
