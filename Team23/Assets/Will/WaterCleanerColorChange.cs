@@ -21,7 +21,7 @@ public class WaterCleanerColorChange : MonoBehaviour
     {
         int p = polution.GetComponent<NewPBAR>().cleanLevel;
 
-        if (p < 80 && p > 50)
+        if (p <= 80 && p > 50)
         {
             rend.enabled = true;
         }
