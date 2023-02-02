@@ -14,8 +14,6 @@ public class AnothertryTimer : MonoBehaviour
     public Text timeText;
 
     public bool timerIsRunning = false;
-    public int cleanLevel;
-    public int cleanLevel1 = 100;
 
     public GameObject pollution;
 
@@ -38,7 +36,8 @@ public class AnothertryTimer : MonoBehaviour
             {
                 timeValue -= Time.deltaTime;
 
-            }else if (cleanLevel <= 50) 
+            }
+            else if (p <= 50) 
             {
 
                 Debug.Log("Time has run out!");
@@ -46,8 +45,8 @@ public class AnothertryTimer : MonoBehaviour
                 timerIsRunning = false;
                 Application.LoadLevel("GameOver");
 
-            }else if (cleanLevel >= 50) 
-
+            }
+            else if (p > 50) 
             {
                 timeValue = 0;
                 timerIsRunning = false;
