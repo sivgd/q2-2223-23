@@ -30,7 +30,7 @@ public class NewPBAR : MonoBehaviour
 
         if (cleanLevel > 100)
         {
-            SceneManager.LoadScene("TitleScreenScene");
+            SceneManager.LoadScene("WinScene");
         }
         else if (cleanLevel > 95)
         {
@@ -154,7 +154,7 @@ public class NewPBAR : MonoBehaviour
         }
         else if (cleanLevel <= 0)
         {
-            SceneManager.LoadScene("TitleScreenScene");
+            SceneManager.LoadScene("GameOver");
         }
 
     }
