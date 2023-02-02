@@ -10,6 +10,7 @@ public class NewPBAR : MonoBehaviour
     Animator anim;
     public int cleanLevel;
     public int cleanLevel1 = 100;
+    public int anything;
 
 
     // Start is called before the first frame update
