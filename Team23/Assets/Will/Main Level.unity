@@ -4391,8 +4391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 487b4214d048562499f2ab6dedee7f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 1943018257}
-  timeValue: 10
+  script: {fileID: 1943018258}
+  timeValue: 6.89
   timeText: {fileID: 364168415}
   timerIsRunning: 0
   bar: {fileID: 0}
@@ -14434,7 +14434,7 @@ MonoBehaviour:
   - {fileID: 1560327075}
   - {fileID: 445184576}
   - {fileID: 487896609}
-  startTimeBtwSpawns: 8
+  startTimeBtwSpawns: 2.76
 --- !u!114 &2073547400
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class AnothertryTimer : MonoBehaviour
 {
-    public PBARMovement script;
+    public NewPBAR script;
 
     public float timeValue = 5;
 
@@ -36,7 +36,7 @@ public class AnothertryTimer : MonoBehaviour
             {
                 timeValue -= Time.deltaTime;
 
-            }else if (cleanLevel <= 50) 
+            }else if (cleanLevel < 50) 
             {
 
                 Debug.Log("Time has run out!");
@@ -44,7 +44,7 @@ public class AnothertryTimer : MonoBehaviour
                 timerIsRunning = false;
                 Application.LoadLevel("GameOver");
 
-            }else if (cleanLevel >= 50) 
+            }else if (cleanLevel > 50) 
 
             {
                 timeValue = 0;
