@@ -25,7 +25,7 @@ public class NewPBAR : MonoBehaviour
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         enemies1 = enemies.Length;
-
+        enemies1 = enemies1 - 3;
         enemies2 = enemies1 * 5;
         cleanLevel = cleanLevel1 - enemies2;
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBehavior : MonoBehaviour
+public class EnemyBehaviorMoveLeft : MonoBehaviour
 {
     float moveSpeed = 1f;
 
@@ -21,13 +21,13 @@ public class EnemyBehavior : MonoBehaviour
         if(IsFacingRight())
         {
             //Move right
+            myRigidbody.velocity = new Vector2(-moveSpeed, 0f);
             
-            myRigidbody.velocity = new Vector2(moveSpeed, 0f);
         }
         else
         {
             //Move left
-            myRigidbody.velocity = new Vector2(-moveSpeed, 0f);
+            myRigidbody.velocity = new Vector2(moveSpeed, 0f);
         }
     }
     private bool IsFacingRight()
